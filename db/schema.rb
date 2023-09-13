@@ -12,8 +12,8 @@
 
 ActiveRecord::Schema[7.0].define(version: 2023_09_13_074058) do
   create_table "bookings", force: :cascade do |t|
-    t.integer "start_date"
-    t.integer "end_date"
+    t.string "start_date"
+    t.string "end_date"
     t.integer "listing_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -27,8 +27,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_13_074058) do
   end
 
   create_table "reservations", force: :cascade do |t|
-    t.integer "start_date"
-    t.integer "end_date"
+    t.string "start_date"
+    t.string "end_date"
     t.integer "listing_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
